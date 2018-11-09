@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>NBL | Поле Чудес 20.05.17</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+<script src="https://use.fontawesome.com/53080e838f.js"></script>
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+<div class="bg-overlay"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-sm-0.52">
+  <a href="sectorbuh.html" aling:center><img src="images\leaguelogo.png" width=100px></a>
+</div>
+</div>
+  <div class="row">
+       <div class="col-md-9 col-sm-0.52">
+          <div class="toggle-content text-center" id="field">
+            <h1>Алкогольное поле чудес!</h1>
+            <div class="rounds-list">
+            <button id="round1" name="round1" type="button">Первая тройка игроков!</button>
+            <button id="round2" name="round2" type="button">Вторая тройка игроков!</button>
+            <button id="round3" name="round3" type="button">Первая тройка игроков</button>
+            <button id="round4" name="round4" type="button">Финал!</button>
+            <button id="round5" name="round5" type="button">СуперЪигра!</button>
+          </div>
+
+             <h4>Барабан</h4>
+             <audio controls style="width:70%"><source src="audio/turn.mp3" type="audio/mpeg"></audio>
+             <ul id="letters"></ul>
+             <form id="hangman">
+                 <input width="100px" type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="" />
+                 <input id="guess" name="guess" type="submit" value="Угадать" />
+             </form>
+             <p id="man"></p>
+             <p id="output" class="output"></p>
+
+             <table class="soundboard">
+               <tr width=100%>
+                 <td width=20%>
+             <h4>Заставка</h4>
+             <audio controls style="width:100%"><source src="audio/intro.mp3" type="audio/mpeg"></audio>
+                 </td>
+                 <td width=20%>
+             <h4>Барабан</h4>
+             <audio controls style="width:100%"><source src="audio/turn.mp3" type="audio/mpeg"></audio>
+                 </td>
+                 <td width=20%>
+             <h4>Неправильно</h4>
+             <audio controls style="width:100%"><source src="audio/wrong-guess.mp3" type="audio/mpeg"></audio>
+                 </td>
+                 <td width=20%>
+             <h4>Верно!</h4>
+             <audio controls style="width:100%"><source src="audio/right-guess.mp3" type="audio/mpeg"></audio>
+             </td></tr>
+               <tr width=100%><td width=20%>
+             <h4>Фанфары</h4>
+             <audio controls style="width:100%"><source src="audio/triumph.mp3" type="audio/mpeg"></audio>
+             </td>
+             <td width=20%>
+             <h4>Черный ящик</h4>
+             <audio controls style="width:100%"><source src="audio/black-box.mp3" type="audio/mpeg"></audio>
+             </td>
+             <td width=20%>
+             <h4>Не та рюмка :(</h4>
+             <audio controls style="width:100%"><source src="audio/wrong-shot.mp3" type="audio/mpeg"></audio>
+             </td>
+             <td width=20%>
+             <h4>СуперИгра!!</h4>
+             <audio controls style="width:100%"><source src="audio/super.mp3" type="audio/mpeg"></audio>
+             </td>
+           </tr></table>
+          </div>
+       </div>
+       <div class="col-md-3 col-sm-0.52">
+          <div class="toggle-content text-center" id="field-music">
+              <iframe frameborder="0" style="border:none;width:100%; height:800px"  src="https://music.yandex.ru/iframe/#playlist/alcoholeague/1000/">Слушайте <a href='https://music.yandex.ru/users/alcoholeague/playlists/1000'>NBL</a> — <a href='https://music.yandex.ru/users/alcoholeague'></a> на Яндекс.Музыке</iframe>
+          </div>
+       </div>
+  </div>
+    </div> <!-- /.container-fluid -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 footer">
+                <p id="bottom">Copyright <a href="https://vk.com/id35275281">mprm59</a> &copy; 2017 <a href="#">National Beerball League.</a></p>
+            </div><!-- /.footer -->
+        </div>
+    </div> <!-- /.container-fluid -->
+
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/field2.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+
+            jQuery(function ($) {
+
+                $.supersized({
+
+                    // Functionality
+                    slide_interval: 3000, // Length between transitions
+                    transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed: 700, // Speed of transition
+
+                    // Components
+                    slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                    slides: [ // Slideshow Images
+                        {
+                            image: 'images/camo.jpg'
+                        }
+                    ]
+
+                });
+            });
+
+    </script>
+
+
+</body>
+</html>
